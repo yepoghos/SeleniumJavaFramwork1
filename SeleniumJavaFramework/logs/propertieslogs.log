@@ -1,0 +1,4 @@
+[INFO ] 2022-05-17 22:00:55.143 [main] Log4j_demo - This is information message
+[ERROR] 2022-05-17 22:00:55.145 [main] Log4j_demo - This is Error message
+[WARN ] 2022-05-17 22:00:55.145 [main] Log4j_demo - This is Warn message
+[FATAL] 2022-05-17 22:00:55.145 [main] Log4j_demo - This is Fatal message

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite3">
+	<test name="Test1">
+		<groups>
+			<define name="Regression 1">
+				<include name="regression"></include>
+				<include name="smoke"></include>
+			</define>
+			<define name="Regression 2">
+				<include name="sanity"></include>								
+			</define>
+			<define name="Regression 3">
+				<include name="windows.*"></include>								
+			</define>
+			<define name="Regression 4">
+				<include name="linux.*"></include>								
+			</define>
+			<define name="All">
+				<include name="AllClassTests"></include>								
+			</define>
+					
+			<run>
+				<include name="All"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="demo.TestNGGroupsDemo" />
+		</classes>
+	</test>
+</suite> 
