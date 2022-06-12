@@ -14,7 +14,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
-import PageObjects.RadarMainPageObjects;
+import PageObjects.RadarMainPageObjectsInteract;
 import conifg.PropertiesFile;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -51,7 +51,7 @@ public class TestNG_ExtentReports2 {
 		ExtentTest test = extent.createTest("Test1_TestNG_ExtentReport").log(Status.PASS,
 				"This is a logging event for Test3, and it passed!");
 		// Test1 code
-		RadarMainPageObjects searchPageObj = new RadarMainPageObjects(driver);
+		RadarMainPageObjectsInteract searchPageObj = new RadarMainPageObjectsInteract(driver);
 		test.log(Status.INFO, "Starting Testcase");
 		driver.get("https://radar.am");
 		test.pass("Navigate to radar.am");
@@ -76,7 +76,7 @@ public class TestNG_ExtentReports2 {
 		ExtentTest test = extent.createTest("Test2_TestNG_ExtentReport").log(Status.PASS,
 				"This is a logging event for Test3, and it passed!");
 		// Test2 code
-		RadarMainPageObjects searchPageObj = new RadarMainPageObjects(driver);
+		RadarMainPageObjectsInteract searchPageObj = new RadarMainPageObjectsInteract(driver);
 		test.log(Status.INFO, "Starting Testcase");
 		driver.get("https://radar.am");
 		test.pass("Navigate to radar.am");

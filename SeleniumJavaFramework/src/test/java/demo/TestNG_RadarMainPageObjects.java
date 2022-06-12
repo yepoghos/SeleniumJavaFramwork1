@@ -6,7 +6,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import PageObjects.RadarMainPageObjects;
+import PageObjects.RadarMainPageObjectsInteract;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestNG_RadarMainPageObjects {
@@ -23,12 +23,12 @@ public class TestNG_RadarMainPageObjects {
 	}
 	// run test
 	@Test
-	public static void radarSearchTest() throws InterruptedException {
+	public void radarSearchTest() throws InterruptedException {
 				
-		RadarMainPageObjects searchPageObj = new RadarMainPageObjects(driver);
+		RadarMainPageObjectsInteract searchPageObj = new RadarMainPageObjectsInteract(driver);
 		
 		driver.get("https://radar.am");
-		searchPageObj.setTextInSearchBox("Yervand Poghosyan");
+		searchPageObj.setTextInSearchBox("Elon Mask");
 		Thread.sleep(1000);
 		//searchPageObj.clickSearchButton();
 		searchPageObj.enterSearchBox();	
@@ -36,7 +36,7 @@ public class TestNG_RadarMainPageObjects {
 	}
 	// close test
 	@AfterTest
-	public void tearDownTest() throws InterruptedException {
+	public void tearDownTest() throws Exception {
 		
 		Thread.sleep(3000);
 		driver.close();

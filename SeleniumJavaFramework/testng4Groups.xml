@@ -25,7 +25,7 @@
 			</run>
 		</groups>
 		<classes>
-			<class name="demo.TestNGGroupsDemo" />
+			<class name="demo.TestNG_GroupsDemo" />
 		</classes>
 	</test>
 </suite> 

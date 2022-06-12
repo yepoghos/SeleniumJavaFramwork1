@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import PageObjects.RadarMainPage;
+import PageObjects.RadarMainPageElements;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestNG_MultiBrowser {
@@ -38,9 +38,9 @@ public class TestNG_MultiBrowser {
 
 	@Test
 	public void test1() throws InterruptedException {
-		RadarMainPage.textBox_search(getDriver()).sendKeys("Путин");
+		RadarMainPageElements.textBox_search(getDriver()).sendKeys("Путин");
 		Thread.sleep(1000);
-		RadarMainPage.button_search(getDriver()).click();
+		RadarMainPageElements.button_search(getDriver()).click();
 		Thread.sleep(1000);		
 		
 	}

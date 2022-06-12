@@ -10,7 +10,7 @@
 	<test name="TestChrome">
 		<parameter name="browserName" value="chrome"></parameter>
 		<classes>
-			<class name="test.Test8_TestNGMultiBrowser" />
+			<class name="test.TestNG_MultiBrowser" />
 		</classes>
 	</test>
 	

@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demo.SauceLabsDemo">
+      <class name="demo.AutoITFileUploadDemo">
         <methods>
-          <include name="correctTitle"/>
-          <include name="setup"/>
-          <include name="teardown"/>
+          <include name="testAutoITUpload"/>
         </methods>
-      </class> <!-- demo.SauceLabsDemo -->
+      </class> <!-- demo.AutoITFileUploadDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

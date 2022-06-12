@@ -3,7 +3,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
-import PageObjects.RadarMainPage;
+import PageObjects.RadarMainPageElements;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
@@ -20,9 +20,9 @@ public class Test2_RadarMainSearch {
 	// Get the test page by URL
 		driver.get("https://radar.am");
 	// 
-		RadarMainPage.textBox_search(driver).sendKeys("Փաշինյան");
+		RadarMainPageElements.textBox_search(driver).sendKeys("Փաշինյան");
 		Thread.sleep(1000);
-		RadarMainPage.button_search(driver).click();
+		RadarMainPageElements.button_search(driver).click();
 		//RadarMainPage.textBox_search(driver).sendKeys(Keys.RETURN);
 		Thread.sleep(3000);
 	// Close the browser   

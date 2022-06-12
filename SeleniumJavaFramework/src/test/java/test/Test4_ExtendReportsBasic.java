@@ -8,7 +8,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-import PageObjects.RadarMainPageObjects;
+import PageObjects.RadarMainPageObjectsInteract;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Test4_ExtendReportsBasic {
@@ -34,7 +34,7 @@ public class Test4_ExtendReportsBasic {
 		// WebDriver code end
 		
 		// Test 3 code starts here ---------------------------------------------
-		RadarMainPageObjects searchPageObj = new RadarMainPageObjects(driver);
+		RadarMainPageObjectsInteract searchPageObj = new RadarMainPageObjectsInteract(driver);
 	test3.log(Status.INFO, "Starting Testcase");
 		driver.get("https://radar.am");
 	test3.pass("Navigate to radar.am");

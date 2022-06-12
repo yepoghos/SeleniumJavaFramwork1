@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Test;
 
-import PageObjects.RadarMainPageObjects;
+import PageObjects.RadarMainPageObjectsInteract;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Test3_RadarMainPageObjects {
@@ -19,7 +19,7 @@ public class Test3_RadarMainPageObjects {
 		WebDriverManager.edgedriver().setup();
 		driver = new EdgeDriver();
 		
-		RadarMainPageObjects searchPageObj = new RadarMainPageObjects(driver);
+		RadarMainPageObjectsInteract searchPageObj = new RadarMainPageObjectsInteract(driver);
 		
 		driver.get("https://radar.am");
 		searchPageObj.setTextInSearchBox("Yervand Poghosyan");

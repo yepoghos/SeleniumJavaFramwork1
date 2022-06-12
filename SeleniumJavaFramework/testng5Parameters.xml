@@ -4,7 +4,7 @@
 	<test name="Test4">
 	<parameter name="myname" value="Yervand"></parameter>
 		<classes>
-			<class name="demo.TestNGParametersDemo"></class>
+			<class name="demo.TestNG_ParametersDemo"></class>
 		</classes>
 	</test>
 </suite> 

@@ -60,7 +60,10 @@
 		</dependency>
 
 	</dependencies>
-
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
 	<build>
 		<plugins>
 			<plugin>
@@ -69,7 +72,7 @@
 				<version>3.0.0-M6</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>{$testngFile}</suiteXmlFile>
+						<suiteXmlFile>testng4Groups.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
